@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0">
+  <meta name="theme-color" content="#00796B">
+  <link rel="stylesheet" href="material.min.css"><link href="style_added.css" type="text/css" rel="stylesheet" media="screen">
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="./material.min.js"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <title>Huling MDL</title>
+</head>
+
+<body>
+
+<div class="demo-layout-transparent mdl-layout mdl-js-layout">
+<header class="mdl-layout__header mdl-layout__header--transparent">
+  <div class="mdl-layout__header-row">
+    <!-- Title -->
+    <span class="mdl-layout-title">MDL Design</span>
+    <!-- Add spacer, to align navigation to the right -->
+    <div class="mdl-layout-spacer"></div>
+    <!-- Navigation -->
+    <nav class="mdl-navigation">
+      <a class="mdl-navigation__link current-link" href="index.html">Home</a>
+      <a class="mdl-navigation__link" href="index.html">My Story (Coming soon)</a>
+      <a class="mdl-navigation__link" href="index.html">Resume (Coming soon)</a>
+    </nav>
+  </div>
+</header>
+<div class="mdl-layout__drawer">
+  <span class="mdl-layout-title">MDL Design</span>
+  <nav class="mdl-navigation">
+    <a class="mobile-current-link mdl-navigation__link" href="index.html">Home</a>
+    <a class="mdl-navigation__link" href="index.html">My Story (Coming soon)</a>
+    <a class="mdl-navigation__link" href="index.html">Resume (Coming soon)</a>
+  </nav>
+</div>
+<main class="mdl-layout__content">
+  <div class="mdl-grid">
+
+    <div class="mdl-cell mdl-cell--12-col center-text">
+      <div id="title-card" class="mdl-card mdl-shadow--2dp through mdl-">
+        <img class="logo" src="logo.png" alt="logo">
+        <div id="title" class="mdl-card__title mdl-card--border center-text">Welcome to my site!</div>
+      </div>
+
+    </div>
+    <div class="mdl-cell mdl-cell--6-col mdl-cell--12-col-tablet mdl-cell--12-col-phone">
+      <div class="mdl-card mdl-shadow--2dp through mdl-">
+        <div class="mdl-card__title mdl-card--border">
+          Me
+        </div>
+        <div class="mdl-card__media">
+          <img src="profile.jpg" alt="issa mee">
+        </div>
+      </div>
+    </div>
+    <div class="mdl-cell mdl-cell--6-col mdl-cell--12-col-tablet mdl-cell--12-col-phone">
+      <div class="mdl-card mdl-shadow--2dp through mdl-">
+        <div class="mdl-card__title mdl-card--border">
+        <button id="demo-menu-lower-right"
+        class="mdl-button mdl-js-button mdl-button--icon">
+          <i class="material-icons">more_vert</i>
+        </button>
+
+        <ul class="mdl-menu mdl-menu mdl-js-menu mdl-js-ripple-effect"
+    for="demo-menu-lower-right">
+          <li class="mdl-menu__item"><a class="photo-link" href="parents.jpg" target="_blank">Parents Photo</a></li>
+          <li class="mdl-menu__item"><a class="photo-link" href="family.jpg" target="_blank">Family Photo</a></li>
+          <li class="mdl-menu__item"><a class="photo-link" href="dog.jpg" target="_blank">Dog Photo</a></li>
+          <li class="mdl-menu__item"><a class="photo-link" href="profilephoto.png" target="_blank">Profile Photo</a></li>
+        </ul>
+          Loved Ones
+        </div>
+        <div class="mdl-tabs mdl-js-tabs mdl-js-ripple-effect">
+          <div class="mdl-tabs__tab-bar">
+            <a href="#parents-panel" class="mdl-tabs__tab is-active">Parents</a>
+            <a href="#family-panel" class="mdl-tabs__tab">Family</a>
+            <a href="#dog-panel" class="mdl-tabs__tab">Dog</a>
+          </div>
+
+          <div class="mdl-tabs__panel is-active" id="parents-panel">
+            <img src="parents.jpg" alt="my mom and dad">
+            <div class="mdl-card__supporting-text center-text">
+              My lovely mother, LeeAnne, and handsome father, Mitch.
+            </div>
+          </div>
+          <div class="mdl-tabs__panel" id="family-panel">
+            <img src="family.jpg" alt="my family">
+            <div class="mdl-card__supporting-text center-text">
+              My beautiful family.
+            </div>
+          </div>
+          <div class="mdl-tabs__panel" id="dog-panel">
+            <img src="dog.jpg" alt="my dog">
+            <div class="mdl-card__supporting-text center-text">
+              My adorable dog Gibbie.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="mdl-cell mdl-cell--12-col mdl-cell--12-col-tablet mdl-cell--12-col-phone">
+      <div class="mdl-card mdl-shadow--2dp through mdl-">
+        <div class="mdl-card__title mdl-card--border">
+          Places to work
+        </div>
+        <ul class="mdl-list">
+          <li class="mdl-list__item mdl-list__item--three-line">
+    <span class="mdl-list__item-primary-content">
+      <i class="material-icons mdl-list__item-avatar">item</i>
+      <span>Progressive</span>
+      <span class="mdl-list__item-text-body">
+        Progressive has an amazing IT team that encourages learning and promotions.
+      </span>
+    </span>
+    <span class="mdl-list__item-secondary-content">
+      <a class="mdl-list__item-secondary-action" href="https://www.progressive.com/jobs/" target="_blank"><i class="material-icons">star</i></a>
+    </span>
+  </li>
+  <li class="mdl-list__item mdl-list__item--three-line">
+    <span class="mdl-list__item-primary-content">
+      <i class="material-icons  mdl-list__item-avatar">item</i>
+      <span>Spotify</span>
+      <span class="mdl-list__item-text-body">
+        Spotify combines my two favorite things, music and technology. This would be a perfect place to balance my hobbies.
+      </span>
+    </span>
+    <span class="mdl-list__item-secondary-content">
+      <a class="mdl-list__item-secondary-action" href="https://www.spotifyjobs.com/" target="_blank"><i class="material-icons">star</i></a>
+    </span>
+  </li>
+  <li class="mdl-list__item mdl-list__item--three-line">
+    <span class="mdl-list__item-primary-content">
+      <i class="material-icons  mdl-list__item-avatar">item</i>
+      <span>Google</span>
+      <span class="mdl-list__item-text-body">
+        Always pushing the frontier of technology, Google is a dream career for anyone in any technology field.
+      </span>
+    </span>
+    <span class="mdl-list__item-secondary-content">
+      <a class="mdl-list__item-secondary-action" href="https://careers.google.com/?&src=Online/House%20Ads/BKWS&gclid=EAIaIQobChMIkMXErMrG1wIVirrACh0cNQLBEAAYASAAEgLcCfD_BwE" target="_blank"><i class="material-icons">star</i></a>
+    </span>
+  </li>
+</ul>
+      </div>
+    </div>
+    <div class="das-buttons mdl-cell mdl-cell--12-col center-text button-col">
+      <div class="mdl-cell mdl-cell--3-col mdl-cell--12-col-tablet mdl-cell--12-col-phone">
+        <a href="mailto:jonathanhuling@gmail.com" class="mdl-button  mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored">
+          E-Mail
+        </a>
+
+      </div>
+      <div class="mdl-cell mdl-cell--3-col mdl-cell--12-col-tablet mdl-cell--12-col-phone">
+        <a href="http://www.linkedin.com/in/jonathan-huling-66b49977" target="_blank" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored">
+          LinkedIn
+        </a>
+      </div>
+      <div class="mdl-cell mdl-cell--3-col mdl-cell--12-col-tablet mdl-cell--12-col-phone">
+        <a href="http://facebook.com/jonathan.huling" target="_blank" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored">
+        Facebook
+        </a>
+      </div>
+    </div>
+
+  </div>
+</main>
+<footer class="mdl-mini-footer">
+  <div class="mdl-mini-footer__left-section">
+    <img class="small-photo" src="profilephoto.png" alt="Site designer photo">
+    Jonathan's MDL
+  </div>
+  <div class="mdl-mini-footer__right-section">
+    &copy; Copyright 2017 || <a href="http://facebook.com/jonathan.huling" target="_blank">Jonathan Huling</a>
+  </div>
+</footer>
+</div>
+</body>
+</html>
