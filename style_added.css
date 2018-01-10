@@ -5,6 +5,9 @@ video {
   width: 100%;
   max-width: 100%;
 }
+.mdl-tabs__tab{
+  font-size: 40%;
+}
 .demo-layout-transparent .mdl-layout__header,
 .demo-layout-transparent .mdl-layout__drawer-button {
 /* This background is dark, so we set text to white. Use 87% black instead if
@@ -132,7 +135,25 @@ footer{
 .logo{
   width: 100%;
 }
+@media only screen and (min-width: 400px){
+  .mdl-tabs__tab{
+    font-size: 60%;
+  }
+}
+@media only screen and (min-width: 500px){
+  .mdl-tabs__tab{
+    font-size: 70%;
+  }
+}
+@media only screen and (min-width: 600px){
+  .mdl-tabs__tab{
+    font-size: 80%;
+  }
+}
 @media only screen and (min-width: 740px){
+  .mdl-tabs__tab{
+    font-size: 100%;
+  }
   .logo{
     width: 500px;
   }
@@ -143,10 +164,18 @@ footer{
     padding-top: 20px;
   }
 }
+@media only screen and (min-width: 840px){
+  .mdl-tabs__tab{
+    font-size: 70%;
+  }
+}
 @media only screen and (min-width: 1025px){
   main{
     width: 75%;
     margin: auto;
+  }
+  .mdl-tabs__tab{
+    font-size: 60%;
   }
   .demo-layout-transparent .mdl-layout__drawer-button{
     display: none;
@@ -159,5 +188,20 @@ footer{
   }
   .mdl-grid{
     margin-top:auto;
+  }
+}
+@media only screen and (min-width: 1130px){
+  .mdl-tabs__tab{
+    font-size: 70%;
+  }
+}
+@media only screen and (min-width: 1250px){
+  .mdl-tabs__tab{
+    font-size: 80%;
+  }
+}
+@media only screen and (min-width: 1435px){
+  .mdl-tabs__tab{
+    font-size: 100%;
   }
 }
